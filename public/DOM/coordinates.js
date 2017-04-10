@@ -10,11 +10,14 @@ let topOfNav = nav.offsetTop
 //Returns Object with coordingates
 
 let uiBox = document.querySelector('.box');
-uiBox.getBoundingClientRect()
+const uiCoords = uiBox.getBoundingClientRect()
+console.dir(uiBox.offsetParent);
 
 const coords = {
-      height: uiBox.height,
-      width: uiBox.width,
-      top: uiBox.top - uiBox.top,
-      left: uiBox.left - uiBox.left
+      height: uiCoords.height,
+      width: uiCoords.width,
+      top: uiCoords.top - uiCoords.top,
+      left: uiCoords.left - uiCoords.left
     };
+
+console.log(coords)
