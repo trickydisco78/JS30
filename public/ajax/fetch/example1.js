@@ -56,7 +56,7 @@ fetch(url)
     return authors.map(function(author) {
       let li = createNode('li'), img = createNode('img'), span = createNode('span');
       img.src = authors.picture.medium;
-      span.innerHTML = `${authors.name.first} ${authors.name.last}`;
+      span.innerHTML = `${author.name.first} ${author.name.last}`;
       append(li, img);
       append(li, span);
       append(ul, li);

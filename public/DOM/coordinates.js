@@ -1,13 +1,15 @@
 // Offsets 
 
 const nav = document.querySelector('.main');
-let topOfNav = nav.offsetTop
 
 // Returns distance of element relative to parent
+let topOfNav = nav.offsetTop
 
-//getBoundingClient Rect
+
+
+// getBoundingClientRect()
 // The Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport
-//Returns Object with coordingates
+//Returns Object with coordinates
 
 let uiBox = document.querySelector('.box');
 const uiCoords = uiBox.getBoundingClientRect()

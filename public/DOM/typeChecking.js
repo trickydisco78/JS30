@@ -33,4 +33,3 @@ typeof notNumber;
 // must check if isNaN()
 typeof notNumber === 'number' && isNaN(notNumber);
 // returns true if type of is "number" and is still NaN
-Add Default Arguments to Function
